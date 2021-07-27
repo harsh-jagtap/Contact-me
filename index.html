@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Harshree Development</title>
+    <!-- navbar css -->
+    <link rel="stylesheet" href="navbar.css">
+    <!-- this page css -->
+    <link rel="stylesheet" href="contact me.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logoText"><a href="https://harsh-jagtap.github.io/Home-Page/">Harshree Development</a> </div>
+        <div id="category" class="resp">
+            <ul class="ul">
+                <li class="navi"><a href="https://harsh-jagtap.github.io/Home-Page/">Home</a></li>
+                <li class="navi"><a href="https://harsh-jagtap.github.io/My-Project/">My Project</a></li>
+                <li class="navi"><a href="#">Contact me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div id="main">
+            <div class="box">
+                <h1>Contact Menu</h1>
+                <hr>
+                <form action="submit">
+                    <!-- name -->
+                    <label for="fullName">Full Name</label>
+                    <input id="fullName" class="rectInput" type="text" placeholder="Enter your name">
+                    <!-- email -->
+                    <label for="email">Email</label>
+                    <input id="email" type="email" class="rectInput" placeholder="Enter your email">
+                    <!-- phone no -->
+                    <label for="phone">Phone no</label>
+                    <input id="phone" type="tel" class="rectInput" placeholder="Enter your phone no">
+                    <!-- reason -->
+                    <label for="reason">Reason of contact</label>
+                    <textarea id="reason" class="rectInput" cols="30" rows="5" placeholder="Enter your reason for contact"></textarea>
+                    <!-- submit -->
+                    <button id="submitForm" class="rectInput">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="contact me.js"></script>
+
+</html>
