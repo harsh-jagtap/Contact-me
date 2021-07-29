@@ -1,26 +1,28 @@
 console.log("wel-come to contact menu");
 
+// Displaying
 let main = document.getElementById("main");
 let button1 = document.getElementById("submitForm");
 let button2 = document.getElementById("submitExperiense");
 
-// console.log(information);
-
+// information 
 button1.addEventListener("click", function(e) {
+    // button to normal
     e.preventDefault();
     main.innerHTML = `
     <div id="fun" class="box font-Mid">Thanks for submiting
     <div>Your information is not used it is only for testing purpose and how is you experience on this website write down below.</div>
     <form>
-        <textarea class="rectInput margin-m " cols="30" rows="5" placeholder="Enter your experience"></textarea>
-        <button id="submitExperiense" class="rectInput">Submit</button>
+    <textarea class="rectInput margin-m " cols="30" rows="5" placeholder="Enter your experience"></textarea>
+    <button id="submitExperiense" class="rectInput">Submit</button>
     </form>
     </div>
     `
-});
-button2.addEventListener("click", function(e) {
-    e.preventDefault();
-    main.innerHTML = `
+
+    // for experience
+    button2.addEventListener("click", function(e) {
+        e.preventDefault();
+        main.innerHTML = `
     <div class="box">
         <h1>Contact Menu</h1>
         <hr>
@@ -42,4 +44,5 @@ button2.addEventListener("click", function(e) {
         </form>
     </div>
     `
+    });
 });

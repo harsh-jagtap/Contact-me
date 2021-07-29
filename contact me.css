@@ -72,20 +72,20 @@ input {
 }
 
 @media only screen and (max-width: 900px) {
-    .contactBox {
+    .box {
         width: 50vw;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .contactBox {
+    .box {
         width: 60vw;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .contactBox {
+    .box {
         width: auto;
-        margin: 10px;
+        margin: 30px 10px;
     }
 }
