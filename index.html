@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="navbar.css">
     <!-- this page css -->
     <link rel="stylesheet" href="contact me.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8DN5TCP214"></script>
     <script>
@@ -36,27 +40,25 @@
         </div>
     </nav>
     <section>
-        <div id="main">
-            <div class="box">
-                <h1>Contact Menu</h1>
-                <hr>
-                <form action="submit">
-                    <!-- name -->
-                    <label for="fullName">Full Name</label>
-                    <input id="fullName" class="rectInput" type="text" placeholder="Enter your name">
-                    <!-- email -->
-                    <label for="email">Email</label>
-                    <input id="email" type="email" class="rectInput" placeholder="Enter your email">
-                    <!-- phone no -->
-                    <label for="phone">Phone no</label>
-                    <input id="phone" type="tel" class="rectInput" placeholder="Enter your phone no">
-                    <!-- reason -->
-                    <label for="reason">Reason of contact</label>
-                    <textarea id="reason" class="rectInput" cols="30" rows="5" placeholder="Enter your reason for contact"></textarea>
-                    <!-- submit -->
-                    <button id="submitForm" class="rectInput">Submit</button>
-                </form>
-            </div>
+        <div class="box">
+            <h1>Contact Menu</h1>
+            <hr>
+            <form action="https://formspree.io/f/mpzkygnd" method="POST">
+                <!-- name -->
+                <label for="fullName">Full Name</label>
+                <input id="fullName" name="FullName" class="rectInput" type="text" placeholder="Enter your name">
+                <!-- email -->
+                <label for="email">Email</label>
+                <input id="email" name="Email" type="email" class="rectInput" placeholder="Enter your email">
+                <!-- phone no -->
+                <label for="phone">Phone no</label>
+                <input id="phone" name="PhoneNo" type="tel" class="rectInput" placeholder="Enter your phone no">
+                <!-- reason -->
+                <label for="reason">Reason of contact</label>
+                <textarea id="reason" name="Reason" class="rectInput" cols="30" rows="5" placeholder="Enter your reason for contact"></textarea>
+                <!-- submit -->
+                <button id="submitForm" type="submit" class="rectInput">Submit</button>
+            </form>
         </div>
     </section>
 </body>
